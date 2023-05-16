@@ -57,13 +57,13 @@
 
       <a href="index.html" class="align-items-center scrollto me-auto me-lg-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img src="assets/img/logo5.png" class="ml-5" style="height:15%; width:15%;" alt="">
+        <img src="assets/img/logo5.png" class="ml-5" style="height:25%; width:25%;" alt="">
       </a>
 
       <nav id="navbar" class="navbar">
         <ul>
 
-          <li><a class="nav-link scrollto" href="index.html#hero-animated">Home</a></li>
+          <li><a class="nav-link scrollto" href="index.html#home">Home</a></li>
           <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
           <!--<li><a class="nav-link scrollto" href="index.html#services">Services</a></li>-->
 		  <li><a class="nav-link scrollto" href="index.html#testimonials">Testimonials</a></li>
@@ -118,7 +118,7 @@
 
     </div>
   </header><!-- End Header -->
-
+<section id="home">
   <section id="hero-animated" class="hero-animated d-flex align-items-center">
     <div class="container d-flex flex-column justify-content-center align-items-center text-center position-relative" data-aos="zoom-out">
       <img src="assets/img/hero-carousel/hero-carousel-3.svg" class="img-fluid animated">
@@ -134,7 +134,7 @@
   <main id="main">
 
     <!-- ======= Featured Services Section ======= -->
-    <section id="featured-services" class="featured-services">
+    <section id="featured-services" class="featured-services about">
       <div class="container">
 
         <div class="row gy-4">
@@ -173,24 +173,12 @@
           </div><!-- End Service Item -->
 
         </div>
-
-      </div>
-    </section><!-- End Featured Services Section -->
-
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-header">
-          <h2>About Us</h2>
-          <p>TronTech Labs is a cutting-edge aerospace company dedicated to developing advanced AI and ML-powered drones with the ability to navigate both air and water. In addition to our work on self-driven drones, we are also dedicated to the development of sustainable, re-usable satellites powered by fuel cells, and work tirelessly to advance fuel cell technology. At TronTech Labs, we strive to bring innovative solutions to the forefront of the aerospace industry and drive progress towards a greener future.</p>
-        </div>
-
-        <div class="row g-4 g-lg-5" data-aos="fade-up" data-aos-delay="200">
+		
+		<div class="row g-4 g-lg-5 mt-5" data-aos="fade-up" data-aos-delay="200">
 
           <div class="col-lg-5">
             <div class="about-img">
-              <img src="assets/img/hfc.gif" class="img-fluid mt-3 mb-5 rounded-4" alt="">
+              <img id="gify" src="assets/img/hfc.gif" class="img-fluid mt-3 mb-5 rounded-4" alt="">
             </div>
           </div>
 
@@ -199,8 +187,8 @@
 
             <!-- Tabs -->
             <ul class="nav nav-pills mb-3">
-              <li><a class="nav-link active" data-bs-toggle="pill" href="#tab1">Hydrogen Fuel Cell</a></li>
-              <li><a class="nav-link" data-bs-toggle="pill" href="#tab2">Our Satellites</a></li>
+              <li><a onclick="document.getElementById('gify').src='assets/img/hfc.gif'" class="nav-link active" data-bs-toggle="pill" href="#tab1">Hydrogen Fuel Cell</a></li>
+              <li><a onclick="document.getElementById('gify').src='assets/img/satellite.gif'" class="nav-link" data-bs-toggle="pill" href="#tab2">Our Satellites</a></li>
             </ul><!-- End Tabs -->
 
             <!-- Tab Content -->
@@ -229,6 +217,42 @@
         </div>
 
       </div>
+    </section><!-- End Featured Services Section -->
+	</section>
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>About Us</h2>
+          <p>TronTech Labs is a cutting-edge aerospace company dedicated to developing advanced AI and ML-powered drones with the ability to navigate both air and water. In addition to our work on self-driven drones, we are also dedicated to the development of sustainable, re-usable satellites powered by fuel cells, and work tirelessly to advance fuel cell technology. At TronTech Labs, we strive to bring innovative solutions to the forefront of the aerospace industry and drive progress towards a greener future.</p>
+        </div>
+
+		<!-- ======= Call To Action Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container" data-aos="zoom-out">
+
+        <div class="row g-5">
+
+          <div class="col-lg-8 col-md-6 content d-flex flex-column justify-content-center order-last order-md-first">
+            <h3>Our <em>Story</em></h3>
+            <p>At TronTech Labs, we are inspired by the wisdom of Nikola Tesla, who believed that the secrets of the universe can be unlocked by understanding energy, frequency, and vibration. The name Tron, which refers to sub-atomic particles like electrons, neutrons, and protons, reflects our commitment to exploring the fundamental building blocks of the universe. Our innovative products, including AI-powered drones and sustainable, reusable satellites powered by fuel cells, embody this spirit of discovery and invention. We believe that technology has the power to shape the future and we are driven by a passion for making that future better.</p>
+            <a class="cta-btn align-self-start" href="index.html#contact">Contact us</a>
+          </div>
+
+          <div class="col-lg-4 col-md-6 order-first order-md-last d-flex align-items-center">
+            <div class="img">
+              <img src="assets/img/drone2.gif" alt="" class="img-fluid">
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Call To Action Section -->
+
+
+      </div>
     </section><!-- End About Section -->
 
     <!-- ======= Clients Section ======= -->
@@ -252,27 +276,6 @@
     </section>--><!-- End Clients Section -->
 
     <!-- ======= Call To Action Section ======= -->
-    <section id="cta" class="cta">
-      <div class="container" data-aos="zoom-out">
-
-        <div class="row g-5">
-
-          <div class="col-lg-8 col-md-6 content d-flex flex-column justify-content-center order-last order-md-first">
-            <h3>Our <em>Story</em></h3>
-            <p>At TronTech Labs, we are inspired by the wisdom of Nikola Tesla, who believed that the secrets of the universe can be unlocked by understanding energy, frequency, and vibration. The name Tron, which refers to sub-atomic particles like electrons, neutrons, and protons, reflects our commitment to exploring the fundamental building blocks of the universe. Our innovative products, including AI-powered drones and sustainable, reusable satellites powered by fuel cells, embody this spirit of discovery and invention. We believe that technology has the power to shape the future and we are driven by a passion for making that future better.</p>
-            <a class="cta-btn align-self-start" href="index.html#contact">Contact us</a>
-          </div>
-
-          <div class="col-lg-4 col-md-6 order-first order-md-last d-flex align-items-center">
-            <div class="img">
-              <img src="assets/img/drone2.gif" alt="" class="img-fluid">
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Call To Action Section -->
 
     <!-- ======= On Focus Section ======= -->
     <!-- <section id="onfocus" class="onfocus">
@@ -1313,6 +1316,7 @@
 		window.open(link);
 	}
   
+	
   </script>
 
 </body>
